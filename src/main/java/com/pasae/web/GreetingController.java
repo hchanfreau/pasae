@@ -2,6 +2,7 @@ package com.pasae.web;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.pasae.domain.Greeting;
 
 @RestController
+@CrossOrigin(value="http://localhost:9000")
 public class GreetingController {
 
 	private static final String template = "Hello, %s!";
