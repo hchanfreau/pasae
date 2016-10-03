@@ -27,8 +27,8 @@ Autenticación
 Por el momento está configurada una autenticación básica por oauth2. El modo de
 autenticación al servidor es `client_credentials` y las credenciales son:
 ```
-client_id = foo
-client_secret = bar
+client_id = my-client-with-secret
+client_secret = secret
 ```
 Con dichas credenciales se debe pedir el token a <http://localhost:8080/oauth/token>
 La respuesta debería ser algo de este tipo:
